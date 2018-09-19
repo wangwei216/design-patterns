@@ -15,6 +15,7 @@
     <bean id="beanFactoryPostProcessor" class="com.wangwei.spring.MyBeanFactoryPostProcessor">
     </bean>
 
+    <!--这个是检查在配置文件中有没有自定义的初始化方法-->
     <bean id="person" class="com.wangwei.spring.Person" init-method="myInit"
           destroy-method="myDestory" scope="singleton" p:name="张三" p:address="广州"
           p:phone="1316454935" />
