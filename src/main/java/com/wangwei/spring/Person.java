@@ -2,8 +2,10 @@ package com.wangwei.spring;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.*;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
 
-public class Person implements BeanFactoryAware , BeanNameAware , InitializingBean , DisposableBean{
+public class Person implements BeanFactoryAware , BeanNameAware , InitializingBean , DisposableBean,ApplicationContextAware {
 
 
      private String name;
@@ -88,5 +90,10 @@ public class Person implements BeanFactoryAware , BeanNameAware , InitializingBe
     public void myDestory() {
         System.out.println("检查是不是有我自己定义的最后的销毁bean方法");
         System.out.println("【destroy-method】调用<bean>的destroy-method属性指定的初始化方法");
+    }
+
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        System.out.println("实现ApplicationContextAware接口调用上下文的引用=========>>>>>>");
     }
 }
