@@ -96,4 +96,6 @@ public class Person implements BeanFactoryAware , BeanNameAware , InitializingBe
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         System.out.println("实现ApplicationContextAware接口调用上下文的引用=========>>>>>>");
     }
+
+
 }

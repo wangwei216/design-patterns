@@ -1,4 +1,4 @@
-package com.example.observerpattern;
+package com.example.observerpattern.demo01;
 
 public interface Member {
 
