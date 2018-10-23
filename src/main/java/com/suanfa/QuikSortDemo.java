@@ -1,5 +1,6 @@
 package com.suanfa;
 
+
 import java.util.Arrays;
 
 //快速排序
@@ -73,7 +74,7 @@ public class QuikSortDemo {
                     j--;
                 if(i < j)
                     s[i++] = s[j];
-                System.out.println("从右向左找---->"+Arrays.toString(s));
+                System.out.println("从右向左找---->"+ Arrays.toString(s));
                 while(i < j && s[i] < x) // 从左向右找第一个大于等于x的数
                     i++;
                 if(i < j)
