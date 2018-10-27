@@ -1,6 +1,6 @@
-package com.example.factory_pattern;
+package com.example.factory_pattern.example;
 
-public class ChicagoStyleCheesePizza extends Pizza{
+public class ChicagoStyleCheesePizza extends Pizza {
 	public  ChicagoStyleCheesePizza(){
 		name ="Chicago Style Deep Dish Cheese Pizza";
 		dough="Extra Thick Crust Dough";

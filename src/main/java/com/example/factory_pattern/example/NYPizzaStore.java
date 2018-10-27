@@ -1,6 +1,6 @@
-package com.example.factory_pattern;
+package com.example.factory_pattern.example;
 
-public class NYPizzaStore extends PizzaStore{
+public class NYPizzaStore extends PizzaStore {
 	Pizza createPizza(String item){
 		if(item.equals("cheese")){
 			return new NYstyleCheesePizza();
