@@ -23,7 +23,7 @@ public class Test {
 		remoteControl.onButtonWasPushed(2);
 		remoteControl.offButtonWasPushed(2);
 		
-		
+
 		
 	}
 

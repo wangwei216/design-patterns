@@ -8,20 +8,20 @@ public class Stereo {
 		this.room=room;
 	}
 	void on(){
-		System.out.println(room+"������");
+		System.out.println(room+"打开音响-----》");
 	}
 	void off(){
-		System.out.println(room+"�ر�����");
+		System.out.println(room+"关闭音响-----》");
 
 	}
 	public void setCd(){
-		System.out.println(room+"װ��cd");
+		System.out.println(room+"装入CD----》");
 	}
     public void setDvd(){
-    	System.out.println(room+"װ��dvd");
+    	System.out.println(room+"装入DVD----》");
 	}
     public void setRadio(){
-    	System.out.println(room+"װ��radio");
+    	System.out.println(room+"打开radio——————》");
     }
     public void setVolume(int volume){
     	this.volume=volume;

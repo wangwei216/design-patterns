@@ -7,10 +7,10 @@ public class Light {
 		this.room=room;
 	}
 	void on(){
-		System.out.println(room+"�򿪵�");
+		System.out.println(room+"打开灯------>");
 	}
 	void off(){
-		System.out.println(room+"�ص���");
+		System.out.println(room+"关闭灯------》");
 	}
 
 }
