@@ -18,14 +18,16 @@ public class DIGuiDemo {
         }
 
     }
+
     public void Swap(int[] list, int i, int j) {
         int t = list[i];
         list[i] = list[j];
         list[j] = t;
     }
+
     public static void main(String[] args) {
         DIGuiDemo d = new DIGuiDemo();
-        int[] arr = {1,2,3,4};
+        int[] arr = {1, 2, 3, 4};
         d.Perm(arr, 0, 3);
     }
 
