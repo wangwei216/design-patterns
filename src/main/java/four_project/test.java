@@ -1,4 +1,6 @@
 package four_project;
 
-public class test {
+import javax.swing.*;
+
+public class test  extends JFrame {
 }

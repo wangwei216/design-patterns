@@ -2,6 +2,9 @@ package four_project.project01_commandpattern.controller;
 
 import four_project.project01_commandpattern.model.*;
 import four_project.project01_commandpattern.view.LightView;
+import four_project.project01_commandpattern.view.LightWithBaseView;
+
+import java.awt.*;
 
 
 public class Controller {
@@ -17,6 +20,10 @@ public class Controller {
         for (int i = 0; i < 7; i++) {
             lights[i] = new Light();
             lightViews[i] = new LightView();
+            //这里需要子啊构造的时候新加一个底座
+            LightView lightView = new LightView();
+            lightViews[i] = new LightWithBaseView(Color.PINK,lightView);
+
             onCommands[i] = new LightOnCommand(lights[i]);
             offCommands[i] = new LightOffCommand(lights[i]);
             remoteControl.setCommand(i, onCommands[i], offCommands[i]);
@@ -47,5 +54,17 @@ public class Controller {
 
     public void undo() {
         remoteControl.undo();
+    }
+
+    public void turnOnAll(){
+        for (int i=0 ;i<7;i++){
+            remoteControl.onButtonWasPushed(i);
+        }
+    }
+
+    public void turnOffAll(){
+        for (int i=0 ;i<7;i++){
+            remoteControl.offButtonWasPushed(i);
+        }
     }
 }
