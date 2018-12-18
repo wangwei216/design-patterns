@@ -1,6 +1,6 @@
 package com.example.strategy_pattern.strategy_factory;
 
-public class DuckFactory extends Factory{
+public class DuckFactory extends Factory {
 
     Duck createDuck(String className) {
         Duck duck = null;

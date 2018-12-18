@@ -2,11 +2,11 @@ package com.example.strategy_pattern.demo2;
 
 public class Test {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-       Helicopter helicopter = new Helicopter("我是Helicopter");
-       helicopter.SubSonicFly();
-       helicopter.VerticalTakeOff();
+        Helicopter helicopter = new Helicopter("我是Helicopter");
+        helicopter.SubSonicFly();
+        helicopter.VerticalTakeOff();
 
         AirPlane airPlane = new AirPlane("我是AirPlane");
         airPlane.LongDistanceTakeOff();

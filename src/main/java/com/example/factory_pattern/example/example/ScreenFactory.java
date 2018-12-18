@@ -9,14 +9,14 @@ public class ScreenFactory extends PartsAbstractFactory {
 
     @Override
     PhoneScreen getScreen(String type) {
-        if(type == null){
+        if (type == null) {
             return null;
         }
-        if(type.equalsIgnoreCase("Low")){
+        if (type.equalsIgnoreCase("Low")) {
             return new PhoneScreenLow();
-        } else if(type.equalsIgnoreCase("Middle")){
+        } else if (type.equalsIgnoreCase("Middle")) {
             return new PhoneScreenMiddle();
-        } else if(type.equalsIgnoreCase("High")){
+        } else if (type.equalsIgnoreCase("High")) {
             return new PhoneScreenHigh();
         }
         return null;

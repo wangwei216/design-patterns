@@ -2,10 +2,10 @@ package com.example.observer_pattern.demo01;
 
 public class Test {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         //观察者
-       ReaderObserver observer001 = new ReaderObserver("我是001");
+        ReaderObserver observer001 = new ReaderObserver("我是001");
         ReaderObserver observer002 = new ReaderObserver("我是002");
         ReaderObserver observer003 = new ReaderObserver("我是003");
 

@@ -15,28 +15,26 @@ public class StockManager implements Subject {
     }
 
 
-
-
     @Override
     public void registerObserver(Observer observer) {
         observerList.add(observer);
-        System.out.println("说明"+observer+"来买股票了！！");
+        System.out.println("说明" + observer + "来买股票了！！");
     }
 
     @Override
     public void removeObserver(Observer observer) {
         int i = observerList.indexOf(observer);
-        if(i>=0){
+        if (i >= 0) {
             observerList.remove(i);
         }
-        System.out.println("说明移除"+observer.toString()+"成功！！");
+        System.out.println("说明移除" + observer.toString() + "成功！！");
     }
 
-    public void priceChanged(double oldPrice,double newPrice){
-        if (newPrice>=(oldPrice+oldPrice*0.05)){
+    public void priceChanged(double oldPrice, double newPrice) {
+        if (newPrice >= (oldPrice + oldPrice * 0.05)) {
             System.out.println("说明股市变化超过5%");
             notifyObserver();
-        }else {
+        } else {
             System.out.println("说明股市价格变化没有超过5%");
         }
 
@@ -44,7 +42,7 @@ public class StockManager implements Subject {
 
     @Override
     public void notifyObserver() {
-        for (int i=0 ;i<observerList.size();i++){
+        for (int i = 0; i < observerList.size(); i++) {
             //分别拿到每一个对象
             Observer observer = (Observer) observerList.get(i);
             System.out.println(observer.toString());

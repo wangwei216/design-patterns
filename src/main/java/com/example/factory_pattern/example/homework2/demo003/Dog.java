@@ -1,6 +1,6 @@
 package com.example.factory_pattern.example.homework2.demo003;
 
-public class Dog  implements Pet{
+public class Dog implements Pet {
 
     @Override
     public void Show() {

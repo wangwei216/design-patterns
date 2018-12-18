@@ -9,6 +9,4 @@ public interface Eudemon {
     public void notifyy();
 
 
-
-
 }

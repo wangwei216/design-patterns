@@ -5,15 +5,15 @@ import org.springframework.beans.factory.*;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
-public class Person implements BeanFactoryAware , BeanNameAware , InitializingBean , DisposableBean,ApplicationContextAware {
+public class Person implements BeanFactoryAware, BeanNameAware, InitializingBean, DisposableBean, ApplicationContextAware {
 
 
-     private String name;
-     private String address;
-     private int phone;
+    private String name;
+    private String address;
+    private int phone;
 
-    private  String beanName;
-    private  BeanFactory beanFactory;
+    private String beanName;
+    private BeanFactory beanFactory;
 
 
     public Person() {

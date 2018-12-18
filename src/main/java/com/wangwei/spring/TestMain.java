@@ -13,10 +13,10 @@ public class TestMain {
         System.out.println("容器初始化成功");
 
         //得到Preson，并使用
-        Person person = ctx.getBean("person",Person.class);
+        Person person = ctx.getBean("person", Person.class);
         System.out.println(person);
 
         System.out.println("现在开始关闭容器！");
-        ((ClassPathXmlApplicationContext)ctx).registerShutdownHook();
+        ((ClassPathXmlApplicationContext) ctx).registerShutdownHook();
     }
 }

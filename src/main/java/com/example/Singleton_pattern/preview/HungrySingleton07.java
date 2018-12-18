@@ -7,15 +7,15 @@ package com.example.Singleton_pattern.preview;
 public class HungrySingleton07 {
 
 
-    private  final  static HungrySingleton07 instance = new HungrySingleton07();
+    private final static HungrySingleton07 instance = new HungrySingleton07();
 
 
     //隐藏构造方法
-    private HungrySingleton07(){
+    private HungrySingleton07() {
 
     }
 
-    public static HungrySingleton07 getInstance(){
+    public static HungrySingleton07 getInstance() {
         return instance;
     }
 

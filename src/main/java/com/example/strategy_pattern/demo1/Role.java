@@ -1,8 +1,8 @@
 package com.example.strategy_pattern.demo1;
 
-public  abstract class Role {
+public abstract class Role {
 
-    private  WeaponBehavior weaponBehavior;
+    private WeaponBehavior weaponBehavior;
 
 
     public void fight() {
@@ -15,7 +15,6 @@ public  abstract class Role {
     }
 
     public abstract void display();
-
 
 
 }

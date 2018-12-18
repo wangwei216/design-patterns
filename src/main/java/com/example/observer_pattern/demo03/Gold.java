@@ -8,7 +8,7 @@ public class Gold implements Treature {
 
 
     private Double total;
-    private List<Eudemon>  list = new ArrayList<Eudemon>();
+    private List<Eudemon> list = new ArrayList<Eudemon>();
 
     private String message;
 
@@ -20,7 +20,6 @@ public class Gold implements Treature {
     public void notifyTheAll() {
         System.out.println("宝藏被拿走了！！！");
     }
-
 
 
 }

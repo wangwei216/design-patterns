@@ -4,7 +4,7 @@ public class Curtains extends Decorater {
 
     private Room room;
 
-    public Curtains(Room room){
+    public Curtains(Room room) {
         this.room = room;
         room.decorateRoom();
     }
@@ -16,6 +16,6 @@ public class Curtains extends Decorater {
 
     @Override
     public String decorateRoom() {
-        return room.decorateRoom()+"用 落地式的窗帘去装扮房间-----》";
+        return room.decorateRoom() + "用 落地式的窗帘去装扮房间-----》";
     }
 }

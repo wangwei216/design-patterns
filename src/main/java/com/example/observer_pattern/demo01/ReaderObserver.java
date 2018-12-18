@@ -14,6 +14,6 @@ public class ReaderObserver implements Observer {
 
     @Override
     public void update(String info) {
-        System.out.println(name+"注意战队小组有新的情况！--->"+info);
+        System.out.println(name + "注意战队小组有新的情况！--->" + info);
     }
 }

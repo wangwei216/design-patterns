@@ -4,7 +4,7 @@ public abstract class Room {
 
     public String descrption;
 
-    public String getDescription(){
+    public String getDescription() {
         return descrption;
     }
 

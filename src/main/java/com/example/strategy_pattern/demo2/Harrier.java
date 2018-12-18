@@ -1,12 +1,12 @@
 package com.example.strategy_pattern.demo2;
 
-public class Harrier extends Fly implements VerticalTakeOff,SuperSonicFly {
+public class Harrier extends Fly implements VerticalTakeOff, SuperSonicFly {
 
     private String name;
 
     public Harrier(String name) {
         super();
-        System.out.println("我是"+name+"===================");
+        System.out.println("我是" + name + "===================");
     }
 
     @Override

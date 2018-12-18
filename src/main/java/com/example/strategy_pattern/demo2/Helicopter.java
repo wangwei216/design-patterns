@@ -1,6 +1,6 @@
 package com.example.strategy_pattern.demo2;
 
-public class Helicopter  extends Fly implements VerticalTakeOff,SubSonicFly{
+public class Helicopter extends Fly implements VerticalTakeOff, SubSonicFly {
 
     private VerticalTakeOff verticalTakeOff;
 
@@ -8,7 +8,7 @@ public class Helicopter  extends Fly implements VerticalTakeOff,SubSonicFly{
 
     public Helicopter(String name) {
         super();
-        System.out.println("我是"+name+"===================");
+        System.out.println("我是" + name + "===================");
 
     }
 

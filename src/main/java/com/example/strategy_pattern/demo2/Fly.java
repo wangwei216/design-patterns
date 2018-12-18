@@ -5,11 +5,11 @@ public abstract class Fly {
     private LongDistanceTakeOff longDistanceTakeOff;
     private SuperSonicFly superSonicFly;
     private SubSonicFly subSonicFly;
-    private  VerticalTakeOff verticalTakeOff;
+    private VerticalTakeOff verticalTakeOff;
 
     private String name;
 
-    public void Fly(String name){
+    public void Fly(String name) {
         this.name = name;
     }
 

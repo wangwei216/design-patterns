@@ -15,10 +15,16 @@ public class Controller {
     Command[] onCommands = new LightOnCommand[7];
     Command[] offCommands = new LightOffCommand[7];
 
+    //把LightFactory类组合过来
+    LightFactory lightFactory = new LightFactory();
+
+
     public Controller() {
         remoteControl = new RemoteControl();
         for (int i = 0; i < 7; i++) {
-            lights[i] = new Light();
+//            lights[i] = new Light();
+            lights[i] = lightFactory.creatLight();
+
             lightViews[i] = new LightView();
             //这里需要子啊构造的时候新加一个底座
             LightView lightView = new LightView();

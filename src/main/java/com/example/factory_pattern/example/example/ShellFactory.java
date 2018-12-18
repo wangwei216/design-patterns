@@ -4,14 +4,14 @@ public class ShellFactory extends PartsAbstractFactory {
 
     @Override
     PhoneShell getShell(String type) {
-        if(type == null){
+        if (type == null) {
             return null;
         }
-        if(type.equalsIgnoreCase("Low")){
+        if (type.equalsIgnoreCase("Low")) {
             return new PhoneShellLow();
-        } else if(type.equalsIgnoreCase("Middle")){
+        } else if (type.equalsIgnoreCase("Middle")) {
             return new PhoneShellMiddle();
-        } else if(type.equalsIgnoreCase("High")){
+        } else if (type.equalsIgnoreCase("High")) {
             return new PhoneShellHigh();
         }
         return null;

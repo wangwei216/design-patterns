@@ -1,6 +1,6 @@
 package com.example.strategy_pattern.demo1;
 
-public class KnifeBehavior implements WeaponBehavior{
+public class KnifeBehavior implements WeaponBehavior {
 
     @Override
     public void useWeapon() {

@@ -1,12 +1,12 @@
 package com.example.strategy_pattern.demo2;
 
-public class AirPlane extends Fly implements LongDistanceTakeOff,SubSonicFly {
+public class AirPlane extends Fly implements LongDistanceTakeOff, SubSonicFly {
 
     private String name;
 
     public AirPlane(String name) {
         super();
-        System.out.println("我是"+name+"===================");
+        System.out.println("我是" + name + "===================");
     }
 
     @Override

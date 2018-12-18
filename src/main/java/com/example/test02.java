@@ -5,12 +5,12 @@ public class test02 {
 
         int len = 50;
         int[] arr = new int[len];
-        for(int i=0;i<len;i++){
-            int x = (int) (Math.random()*10*5);
-            arr[i]=x;
+        for (int i = 0; i < len; i++) {
+            int x = (int) (Math.random() * 10 * 5);
+            arr[i] = x;
             System.out.println(arr[i]);
         }
-        System.out.println("使用分组法查找key为12的："+ +search(arr, 12));
+        System.out.println("使用分组法查找key为12的：" + +search(arr, 12));
     }
 
     public static int search(int[] arr, int key) {

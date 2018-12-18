@@ -1,6 +1,6 @@
 package com.example.observer_pattern.demo03;
 
-public class Cage implements Eudemon,Action {
+public class Cage implements Eudemon, Action {
 
 
     private Treature treature;
@@ -14,13 +14,13 @@ public class Cage implements Eudemon,Action {
     @Override
     public void take(String treature, double quantity) {
 
-        System.out.println(treature+"宝藏被拿走了"+quantity+"箱");
+        System.out.println(treature + "宝藏被拿走了" + quantity + "箱");
     }
 
 
     @Override
     public void count(double reduce) {
-        System.out.println("宝藏还剩------>"+(total-reduce));
+        System.out.println("宝藏还剩------>" + (total - reduce));
     }
 
     @Override

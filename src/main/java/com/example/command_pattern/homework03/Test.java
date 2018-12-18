@@ -1,7 +1,7 @@
 package com.example.command_pattern.homework03;
 
 public class Test {
-	public static void main(String[] args) {
+    public static void main(String[] args) {
         MakeFolder makeMulu = new MakeFolder();
         Command command = new commandfoder1(makeMulu);
         RequestMakeMulu request = new RequestMakeMulu();

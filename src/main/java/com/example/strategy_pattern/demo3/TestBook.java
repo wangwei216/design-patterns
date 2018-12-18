@@ -1,6 +1,6 @@
 package com.example.strategy_pattern.demo3;
 
-public class TestBook extends  BookStore {
+public class TestBook extends BookStore {
 
 
     @Override
@@ -8,7 +8,7 @@ public class TestBook extends  BookStore {
         System.out.println("我是用来测试的实例对象！");
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         BookStore book001 = new TestBook();
         book001.display();

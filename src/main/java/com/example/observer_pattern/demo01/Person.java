@@ -1,7 +1,6 @@
 package com.example.observer_pattern.demo01;
 
-public class Person extends Subject implements Member,Observer {
-
+public class Person extends Subject implements Member, Observer {
 
 
     @Override
@@ -11,6 +10,6 @@ public class Person extends Subject implements Member,Observer {
 
     @Override
     public void update(String info) {
-        System.out.println("注意！！！"+info);
+        System.out.println("注意！！！" + info);
     }
 }

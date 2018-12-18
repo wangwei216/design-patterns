@@ -2,20 +2,21 @@ package com.example.decoration_patterns.book_example;
 
 public class Whip extends CondimentDecorator {
     Beverage beverage;
-    public Whip(Beverage beverage){
-    	this.beverage=beverage;
+
+    public Whip(Beverage beverage) {
+        this.beverage = beverage;
     }
-	
-	public String getDescription() {
 
-		return beverage.getDescription()+", Whip";
-	}
+    public String getDescription() {
 
-	
-	public double cost() {
+        return beverage.getDescription() + ", Whip";
+    }
 
-		return .10 + beverage.cost();
-	}
+
+    public double cost() {
+
+        return .10 + beverage.cost();
+    }
 
 
 }

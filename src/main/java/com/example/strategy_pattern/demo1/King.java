@@ -8,7 +8,7 @@ public class King extends Role {
         System.out.println("我就是国王！");
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Role role = new King();
 
         role.display();

@@ -4,9 +4,10 @@ public class Color extends Decorater {
 
     private Room room;
 
-    public Color(Room room){
+    public Color(Room room) {
         this.room = room;
     }
+
     @Override
     public String getDescription() {
         return "我是颜色组件类型------》";

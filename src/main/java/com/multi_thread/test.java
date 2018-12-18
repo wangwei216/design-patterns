@@ -6,8 +6,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class test {
 
 
-
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         ThreadLocal threadLocal = new ThreadLocal();
 
@@ -28,12 +27,12 @@ public class test {
         List list1 = new LinkedList();
 
         Set set = new HashSet();
-        for (int i=0;i<100;i++){
+        for (int i = 0; i < 100; i++) {
             set.add(i);
         }
 
         Iterator iterator = set.iterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
 

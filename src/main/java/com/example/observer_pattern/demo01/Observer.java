@@ -4,6 +4,6 @@ package com.example.observer_pattern.demo01;
 public interface Observer {
 
     //观察者受到信息
-    public  void  update(String info);
+    public void update(String info);
 
 }

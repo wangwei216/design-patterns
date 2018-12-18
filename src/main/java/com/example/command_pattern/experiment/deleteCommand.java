@@ -1,6 +1,6 @@
 package com.example.command_pattern.experiment;
 
-public class deleteCommand implements  Command {
+public class deleteCommand implements Command {
     @Override
     public void execute() {
         System.out.println("执行添加命令------>");
