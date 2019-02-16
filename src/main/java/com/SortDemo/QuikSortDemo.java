@@ -7,11 +7,7 @@ import java.util.Arrays;
 public class QuikSortDemo {
 
 
-    /*
-     * 思路：
-     * 1. 需要先定义一个
-     *
-     * */
+
     //s表示一个数组，l表示数组最左侧的，r表示数组最右侧的
     public static int AdjustArray(int s[], int l, int r) {
 
@@ -56,6 +52,12 @@ public class QuikSortDemo {
         }
     }
 
+    /*
+     * 思路：
+     * 1. 需要先把数组 数组最左、最右侧传进来
+     * 2. 当左侧值不能大于等于右侧值
+     * 3. 当左侧的下标i大于等于j时，跳出循环，并且去找比第一个基准数小的数
+     * */
 
     //快速排序集中到一个方法中的
     static void quick_sort(int s[], int l, int r) {

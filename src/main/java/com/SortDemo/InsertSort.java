@@ -37,6 +37,7 @@ public class InsertSort {
         int temp =0;
         //外层遍历意思是先进行一个一个拿过来
         for (int i=1;i<length;i++){
+            System.out.println("第一次循环的i--->"+i);
             //从idex开始向左
             for (int j=i;j>0 && array[j]<array[j-1];j--){
                 temp=array[j];
