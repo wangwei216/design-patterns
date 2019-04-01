@@ -12,6 +12,10 @@ public class TestList {
 
         Set set = new HashSet();
 
+        Map map1 = new HashMap();
+
+        Map<Object, Object> objectObjectMap = Collections.synchronizedMap(map1);
+
         ArrayList<String> list = new ArrayList<String>();
         list.add("a"); 
         list.add("b");

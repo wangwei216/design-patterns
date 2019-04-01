@@ -3,6 +3,7 @@ package com.CollectionTest;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
+import java.util.TreeSet;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 public class TestSet {
@@ -10,6 +11,7 @@ public class TestSet {
     public static void main(String[] args) {
 
         Set set = new HashSet();
+        TreeSet treeSet = new TreeSet();
         set.add(1);
         set.add(2);
         set.add(3);

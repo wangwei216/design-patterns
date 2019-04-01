@@ -22,7 +22,7 @@ public class MyBeanPostProcessor implements BeanPostProcessor {
     }
 
     @Override
-    public Object postProcessBeforeInitialization(Object arg0, String arg1)
+        public Object postProcessBeforeInitialization(Object arg0, String arg1)
             throws BeansException {
         System.out
                 .println("调用BeanPostProcessor接口的前置初始化方法postProcessBeforeInitialization对属性进行更改！");
