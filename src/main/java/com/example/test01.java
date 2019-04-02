@@ -10,6 +10,9 @@ public class test01 {
 
         Lock lock = new ReentrantLock();
 
+
+        //测试
+
         int len = 50;
         int[] data = new int[len];
         for (int i = 0; i < len; i++) {
